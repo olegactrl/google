@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Custom Google Search</title>
+</head>
+<body>
+    <div class="Google">Google</div>
+     <form action="https://www.google.com/search" method="GET">
+        <input type="hidden" name="tbm" value="isch" class="google-search-form">
+        <input type="text" name="q" placeholder="Search for images" class="google-search-input">
+        <input type="submit" value="Google Image Search" class="google-search-button">
+    </form>
+    <button class="search-button" onclick="SearchPage()">Search</button>
+    <button class="wide-button" onclick="WidePage()">Wide search</button>
+
+
+    <script>
+    function SearchPage() {
+        window.location.href = 'index.html';
+    }
+
+    function WidePage() {
+        window.location.href = 'wide.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Search</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Custom Google Search</title>
+	</head>
+
+	<body>
+		<div class="container">
+	        <form action="https://www.google.com/search" method="GET">
+	            <label class="label" for="allWords">Find pages with all these words:</label>
+	            <input type="text" name="as_q" id="allWords" class="input">
+
+	            <label class="label" for="exactPhrase">Find pages with this exact word or phrase:</label>
+	            <input type="text" name="as_epq" id="exactPhrase" class="input">
+
+	            <label class="label" for="anyOfTheseWords">Find pages with any of these words:</label>
+	            <input type="text" name="as_oq" id="anyOfTheseWords" class="input">
+
+	            <label class="label" for="noneOfTheseWords">Find pages with none of these words:</label>
+	            <input type="text" name="as_eq" id="noneOfTheseWords" class="input">
+
+	            <button type="submit" class="button">Advanced Search</button>
+	        </form>
+    	</div>	
+    <button class="search-button-2" onclick="SearchPage()">Search</button>
+    <button class="image-button" onclick="PicPage()">Search pictures</button>
+
+
+  	<script>
+    function PicPage() {
+     	window.location.href = 'pic.html';
+    }
+
+    function SearchPage() {
+        window.location.href = 'index.html';
+    }
+
+  </script>
+
+	</body>
+</html>

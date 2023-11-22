@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Search</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<title>Custom Google Search</title>
+	</head>
+
+	<body>
+		<div class="Google">Google</div>
+			<form action="https://google.com/search" class="google-search-form">
+				<input type="text" name="q" class="google-search-input">
+				<input type="submit" value="Google Search" class="google-search-button">
+			</form>
+			<button class="image-button" onclick="PicPage()">Search pictures</button>
+  			<button class="wide-button" onclick="WidePage()">Wide search</button>
+
+
+  	<script>
+    function PicPage() {
+     	window.location.href = 'pic.html';
+    }
+
+    function WidePage() {
+      	window.location.href = 'wide.html';
+    }
+  </script>
+	</body>
+</html>
